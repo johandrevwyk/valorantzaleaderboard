@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valorant SSA Leaderboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta charset="UTF-8">
+
+    <meta property="og:title" content="Valorant SSA Leaderboard">
+    <meta property="og:description" content="A temporary placeholder leaderboard until Tracker.gg fixes theirs (yes this one works)">
+</head>
+<body>
+<div class="l-wrapper">
+  <div class="c-header"><img class="c-logo" src="logo.png" draggable="false"/>
+		<form action="insert.php" method="post">
+			<label for="name" style="color: white;">Name:</label>
+			<input type="text" id="name" name="name" required style="color: black;">
+			<button type="submit" class="c-button c-button--primary">Add Player</button>
+		</form>
+  </div>
+  <div class="l-grid">
+    
+    <div class="l-grid__item">
+      <div class="c-card">
+        <div class="c-card__header">
+          <h3>NOTE: <br> Ranks are updated every 50 minutes. <br>Changing your name will delete you from the system. <br> Names with Unicode characters are not accepted due to limitations. <br> Sometimes it might happen that you get set to Unranked, it fixes on the next resync</h3>
+        </div>
+        <div class="c-card__body">
+          <ul class="c-list" id="list">
+            <li class="c-list__item">
+              <div class="c-list__grid">
+                <div class="u-text--left u-text--small u-text--medium">Rank</div>
+                <div class="u-text--left u-text--small u-text--medium">Player</div>
+                <div class="u-text--right u-text--small u-text--medium">RR</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer Section -->
+  <footer class="c-footer">
+    <p>&copy; 2023 heartbreakhotel</p>
+	<p>This Leaderboard isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.</p>
+  </footer>
+  
+</div>
+<script src="script.js"></script>
+</body>
+</html>
